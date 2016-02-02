@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_olarn_framework_entity_AppUser" modelAttribute="appUser" path="/appusers" versionField="Version" z="Nx2wTOFAbJHBH4uSJg2Ic/qkWAw=">
+        <field:input field="firstName" id="c_com_olarn_framework_entity_AppUser_firstName" z="CB3yQ4YoUaKfc3JzZUunVlkTMJo="/>
+        <field:input field="lastName" id="c_com_olarn_framework_entity_AppUser_lastName" z="Y9WOAWldmDm8SjJshNKW9ADI3FA="/>
+        <field:input field="email" id="c_com_olarn_framework_entity_AppUser_email" required="true" validationMessageCode="field_invalid_email" validationRegex="/^\\S+@\\S+\\.\\S+$/" z="Kw8FB+wDHzAS0iqS+Aj2U0+mJFM="/>
+        <field:input field="password" id="c_com_olarn_framework_entity_AppUser_password" required="true" z="idG3BcQLeFbiM+xYyhZyPVEppwc="/>
+        <field:checkbox field="enabled" id="c_com_olarn_framework_entity_AppUser_enabled" z="KWxQHQYvqDJU6yAV4XZKsQFnQJ8="/>
+        <field:checkbox field="tokenExpired" id="c_com_olarn_framework_entity_AppUser_tokenExpired" z="LjYuJTd0YQyjORgRKtgfkCCVrOk="/>
+        <field:select field="appRoles" id="c_com_olarn_framework_entity_AppUser_appRoles" itemValue="id" items="${approles}" multiple="true" path="/approles" z="txkk9PSH882qFpPb56ahJM/w0qw="/>
+    </form:update>
+</div>

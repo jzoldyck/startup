@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_olarn_framework_entity_AppUser" object="${appuser}" path="/appusers" z="fP4DgZbI5ENXc93ZqRim1EKXJ7U=">
+        <field:display field="firstName" id="s_com_olarn_framework_entity_AppUser_firstName" object="${appuser}" z="NKDtVc0Av2SA/Z2vIRdjuZR6z68="/>
+        <field:display field="lastName" id="s_com_olarn_framework_entity_AppUser_lastName" object="${appuser}" z="yeDgbArWXYO7r1bTh+944Z6o+kQ="/>
+        <field:display field="email" id="s_com_olarn_framework_entity_AppUser_email" object="${appuser}" z="ReR5RNHAXWPSV6obgGVfR1ge6Zg="/>
+        <field:display field="password" id="s_com_olarn_framework_entity_AppUser_password" object="${appuser}" z="uvCeWsTBt2XKGjbCMJQNW87BfTM="/>
+        <field:display field="enabled" id="s_com_olarn_framework_entity_AppUser_enabled" object="${appuser}" z="b0/S2VQCRtom9qb3EnNKyiQIPow="/>
+        <field:display field="tokenExpired" id="s_com_olarn_framework_entity_AppUser_tokenExpired" object="${appuser}" z="28A3CtkBBYAFNEBfcpVaOXnfkVc="/>
+        <field:display field="appRoles" id="s_com_olarn_framework_entity_AppUser_appRoles" object="${appuser}" z="q1FR57QWWkRVdxC5L5KCyRvfWuk="/>
+    </page:show>
+</div>

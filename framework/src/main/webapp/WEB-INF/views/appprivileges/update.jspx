@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_olarn_framework_entity_AppPrivilege" modelAttribute="appPrivilege" path="/appprivileges" versionField="Version" z="HblzgONrus/VpbVYyLg/rDYrXKA=">
+        <field:input field="name" id="c_com_olarn_framework_entity_AppPrivilege_name" required="true" z="2XVwlHw0VvObi5/YNFOWZxANF6U="/>
+        <field:select field="appRoles" id="c_com_olarn_framework_entity_AppPrivilege_appRoles" itemValue="id" items="${approles}" multiple="true" path="/approles" z="ks7QoA5Bfjq9FukYlncO6+iOmxo="/>
+    </form:update>
+</div>

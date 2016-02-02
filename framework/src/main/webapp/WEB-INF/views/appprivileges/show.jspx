@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_olarn_framework_entity_AppPrivilege" object="${appprivilege}" path="/appprivileges" z="OgM70uLzNY0XyGGexT0o5G26S8s=">
+        <field:display field="name" id="s_com_olarn_framework_entity_AppPrivilege_name" object="${appprivilege}" z="zZPDDDTJmdoGOY4h+YtL48zY1LY="/>
+        <field:display field="appRoles" id="s_com_olarn_framework_entity_AppPrivilege_appRoles" object="${appprivilege}" z="zoO6UoVhlZkdvaf5WRhfKuD9cNA="/>
+    </page:show>
+</div>

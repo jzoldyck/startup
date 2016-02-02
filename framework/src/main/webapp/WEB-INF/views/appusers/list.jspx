@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_olarn_framework_entity_AppUser" items="${appusers}" z="671W/n8OdcT2PBlCBOF9Gxy8bSA=">
+        <table:table data="${appusers}" id="l_com_olarn_framework_entity_AppUser" path="/appusers" z="soTaKqVYXuC4WrBBfuyN8MW3xCo=">
+            <table:column id="c_com_olarn_framework_entity_AppUser_firstName" property="firstName" z="Fjd7OV92XF2b7RzfQ6GzOC8aqLU="/>
+            <table:column id="c_com_olarn_framework_entity_AppUser_lastName" property="lastName" z="TDoRgaGErwk/Up2omwNqiUJ4NKU="/>
+            <table:column id="c_com_olarn_framework_entity_AppUser_email" property="email" z="SPXvIKbN/6cuLBMJUwdVIz9LJXk="/>
+            <table:column id="c_com_olarn_framework_entity_AppUser_password" property="password" z="cld5hSiaB2EqgO3EXi0iWfGLIwA="/>
+            <table:column id="c_com_olarn_framework_entity_AppUser_enabled" property="enabled" z="dsX1lp26q6jxL0AVfM46PtQ2P3c="/>
+            <table:column id="c_com_olarn_framework_entity_AppUser_tokenExpired" property="tokenExpired" z="wj7xyMmOnqb2Keb8MX2KqBzJZ6k="/>
+        </table:table>
+    </page:list>
+</div>

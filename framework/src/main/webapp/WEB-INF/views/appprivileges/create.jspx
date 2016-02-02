@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_olarn_framework_entity_AppPrivilege" modelAttribute="appPrivilege" path="/appprivileges" render="${empty dependencies}" z="hY7ZnPG3sxcPcTTnCKheIIMt8oo=">
+        <field:input field="name" id="c_com_olarn_framework_entity_AppPrivilege_name" required="true" z="2XVwlHw0VvObi5/YNFOWZxANF6U="/>
+        <field:select field="appRoles" id="c_com_olarn_framework_entity_AppPrivilege_appRoles" itemValue="id" items="${approles}" multiple="true" path="/approles" z="ks7QoA5Bfjq9FukYlncO6+iOmxo="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_olarn_framework_entity_AppPrivilege" render="${not empty dependencies}" z="TD1zpg8XvYhnLppl3q6+C7dlfIQ="/>
+</div>
