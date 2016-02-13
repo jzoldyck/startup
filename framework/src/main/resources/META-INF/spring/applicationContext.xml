@@ -46,17 +46,33 @@
 		<context:exclude-filter expression="org.springframework.stereotype.Controller"
 			type="annotation" />
 	</context:component-scan>
+
 	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/olarn" />
+	<!-- 
+
 	<bean class="org.springframework.orm.jpa.JpaTransactionManager"
 		id="transactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
-	<tx:annotation-driven mode="aspectj"
-		transaction-manager="transactionManager" />
+	<bean class="org.springframework.transaction.jta.JtaTransactionManager"
+		id="transactionManager">
+	</bean>
+	-->
 	<bean
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
 		id="entityManagerFactory">
 		<property name="persistenceUnitName" value="olarn" />
-		<property name="dataSource" ref="dataSource" />
-	</bean>
+<!-- 		<property name="dataSource" ref="dataSource" />
+ -->
+ 	</bean>
+	<!--
+	<tx:annotation-driven mode="aspectj"
+		transaction-manager="transactionManager" />
+	-->
+	<tx:jta-transaction-manager
+		userTransactionName="java:comp/UserTransaction" />
+	<!--
+	<jee:jndi-lookup id="entityManagerFactory" jndi-name="jdbc/olarn"
+		expected-type="javax.persistence.EntityManagerFactory" />
+	-->
 </beans>

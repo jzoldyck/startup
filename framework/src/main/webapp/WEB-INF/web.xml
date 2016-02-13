@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	version="3.1">
+	version="3.1" metadata-complete="true">
 
 
 	<display-name>framework</display-name>
 
 	<description>Roo generated framework application</description>
+	
+	<!--
+	<persistence-context-ref>
+		<persistence-context-ref-name>jdbc/olarn</persistence-context-ref-name>
+		<persistence-unit-name>olarn</persistence-unit-name>
+	</persistence-context-ref>
+	-->
 
 
 	<!-- Enable escaping of form submission contents -->
