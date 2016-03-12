@@ -6,6 +6,13 @@
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<jta-data-source>jdbc/olarn</jta-data-source>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<validation-mode>NONE</validation-mode>
+<!-- 
+		<class>com.olarn.framework.entity.AppPrivilege</class>
+		<class>com.olarn.framework.entity.AppRole</class>
+		<class>com.olarn.framework.entity.AppUser</class>
+		<class>com.olarn.framework.entity.OlarnObject</class>
+ -->
 		<properties>
 			<property name="eclipselink.target-server" value="Glassfish" />
 			<property name="eclipselink.target-database"

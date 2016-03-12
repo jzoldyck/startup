@@ -10,5 +10,6 @@
         <field:display field="enabled" id="s_com_olarn_framework_entity_AppUser_enabled" object="${appuser}" z="b0/S2VQCRtom9qb3EnNKyiQIPow="/>
         <field:display field="tokenExpired" id="s_com_olarn_framework_entity_AppUser_tokenExpired" object="${appuser}" z="28A3CtkBBYAFNEBfcpVaOXnfkVc="/>
         <field:display field="appRoles" id="s_com_olarn_framework_entity_AppUser_appRoles" object="${appuser}" z="q1FR57QWWkRVdxC5L5KCyRvfWuk="/>
+        <field:display field="username" id="s_com_olarn_framework_entity_AppUser_username" object="${appuser}" z="uputMqzDqF2xaWCaX567/tp6psU="/>
     </page:show>
 </div>

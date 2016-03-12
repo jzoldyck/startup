@@ -9,7 +9,7 @@
             <table:column id="c_com_olarn_framework_entity_AppUser_email" property="email" z="SPXvIKbN/6cuLBMJUwdVIz9LJXk="/>
             <table:column id="c_com_olarn_framework_entity_AppUser_password" property="password" z="cld5hSiaB2EqgO3EXi0iWfGLIwA="/>
             <table:column id="c_com_olarn_framework_entity_AppUser_enabled" property="enabled" z="dsX1lp26q6jxL0AVfM46PtQ2P3c="/>
-            <table:column id="c_com_olarn_framework_entity_AppUser_tokenExpired" property="tokenExpired" z="wj7xyMmOnqb2Keb8MX2KqBzJZ6k="/>
+            <table:column id="c_com_olarn_framework_entity_AppUser_username" property="username" z="xzvKSulmpITHRHx8yH8FrkP0ENw="/>
         </table:table>
     </page:list>
 </div>

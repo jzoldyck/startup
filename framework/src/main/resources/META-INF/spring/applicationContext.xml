@@ -58,13 +58,18 @@
 		id="transactionManager">
 	</bean>
 	-->
-	<bean
-		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+	<bean class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
 		id="entityManagerFactory">
 		<property name="persistenceUnitName" value="olarn" />
 <!-- 		<property name="dataSource" ref="dataSource" />
  -->
- 	</bean>
+<!--  		<property name="jpaDialect" ref="jpaDialect"></property>
+ 		<property name="jpaVendorAdapter">
+ 			<bean class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter "/>
+ 		</property>
+ --> 	</bean>
+	<bean class="org.springframework.orm.jpa.vendor.EclipseLinkJpaDialect"
+		id="jpaDialect" /> 
 	<!--
 	<tx:annotation-driven mode="aspectj"
 		transaction-manager="transactionManager" />

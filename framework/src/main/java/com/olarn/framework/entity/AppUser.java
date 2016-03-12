@@ -1,21 +1,28 @@
 package com.olarn.framework.entity;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
-import org.springframework.roo.addon.serializable.RooSerializable;
-import org.springframework.roo.addon.tostring.RooToString;
-import javax.persistence.Column;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.CascadeType;
+
+import javax.persistence.Column;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
+import org.springframework.roo.addon.javabean.RooJavaBean;
+import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
+import org.springframework.roo.addon.serializable.RooSerializable;
+import org.springframework.roo.addon.tostring.RooToString;
 
 @RooJavaBean
 @RooToString
-@RooJpaActiveRecord(table = "app_user", persistenceUnit = "olarn")
+@RooJpaEntity(table = "app_user")
 @RooSerializable
 public class AppUser extends OlarnObject {
+
+    @NotNull
+    @Column(unique = true)
+    private String username;
 
     /**
      */
@@ -39,14 +46,18 @@ public class AppUser extends OlarnObject {
 
     /**
      */
-    private Boolean enabled;
+    private boolean enabled;
 
     /**
      */
-    private Boolean tokenExpired;
+    private boolean tokenExpired;
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
+    @JoinTable(
+    		name = "app_users_app_roles",
+    		joinColumns = @JoinColumn(name = "app_user_id", referencedColumnName = "id"),
+    		inverseJoinColumns = @JoinColumn(name = "app_role_id", referencedColumnName = "id"))
     private Set<AppRole> appRoles = new HashSet<AppRole>();
 }

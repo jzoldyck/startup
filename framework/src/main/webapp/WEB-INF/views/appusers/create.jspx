@@ -10,6 +10,7 @@
         <field:checkbox field="enabled" id="c_com_olarn_framework_entity_AppUser_enabled" z="KWxQHQYvqDJU6yAV4XZKsQFnQJ8="/>
         <field:checkbox field="tokenExpired" id="c_com_olarn_framework_entity_AppUser_tokenExpired" z="LjYuJTd0YQyjORgRKtgfkCCVrOk="/>
         <field:select field="appRoles" id="c_com_olarn_framework_entity_AppUser_appRoles" itemValue="id" items="${approles}" multiple="true" path="/approles" z="txkk9PSH882qFpPb56ahJM/w0qw="/>
+        <field:input field="username" id="c_com_olarn_framework_entity_AppUser_username" required="true" z="n2LsA/M8x7GKOP+1KfMSTEhsJKg="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_olarn_framework_entity_AppUser" render="${not empty dependencies}" z="znNMpGAs7gX8ntAshvTomWHLiKI="/>
 </div>
